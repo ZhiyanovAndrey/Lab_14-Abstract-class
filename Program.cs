@@ -31,7 +31,7 @@ namespace Lab_14_Abstract_class
         }
         public abstract void Say();
 
-        public void ShowInfo() // передаем в метод объект типа Animal и у этого обьекта вызыватm метод Say()
+        public void ShowInfo() 
         {
             Console.WriteLine(Name);
             Say();
@@ -43,7 +43,7 @@ namespace Lab_14_Abstract_class
     class Cat : Animal
     {
 
-        private string name;
+ 
         public override string Name { get; set; }
         public Cat(string name) : base(name) { }
 
@@ -58,7 +58,7 @@ namespace Lab_14_Abstract_class
     }
     class Dog : Animal
     {
-        private string name;
+
         public override string Name { get; set; }
 
         public Dog(string name) : base(name) { }
@@ -80,7 +80,7 @@ namespace Lab_14_Abstract_class
             //int a = Convert.ToInt32(Console.ReadLine());
 
             Cat cat = new Cat("Мурка");
-            Dog dog = new Dog("Жучка");
+            Dog dog = new Dog("Шарик");
             cat.ShowInfo();
             dog.ShowInfo();
 
